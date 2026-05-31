@@ -146,10 +146,11 @@ button:hover{
     transform: translateY(-8px);
 }
 
-.card img{
-    width: 100%;
-    border-radius: 15px;
-    margin-top: 15px;
+.card img {
+    width: 200px;      /* même largeur */
+    height: 150px;     /* même hauteur */
+    object-fit: cover; /* remplit le cadre sans déformer */
+    border-radius: 10px;
 }
 
 .card h3{
