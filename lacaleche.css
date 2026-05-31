@@ -1,0 +1,417 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* BODY */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f5f2;
+    color: #333;
+    line-height: 1.6;
+    
+}
+
+/* HEADER */
+header{
+    background-color: #a49595;
+    padding: 15px 40px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    color: #141211;
+    font-size: 50px;
+        font-family: "fairplex-wide", serif !important;
+
+}
+
+.logo{
+    width: 280px;
+    height: auto;
+}
+
+/* MENU NAVIGATION */
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+.menu{
+    object-fit: cover;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover{
+    color: #db620c;
+}
+
+/* SECTION GENERALE */
+section{
+    padding: 80px 10%;
+}
+
+/* ACCUEIL */
+#accueil{
+    text-align: center;
+    background: linear-gradient(to bottom, #c6bdbd, #f3f3f3);
+}
+
+#accueil h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #db620c;
+}
+
+#accueil img{
+    width: 100%;
+    max-width: 850px;
+    border-radius: 20px;
+    margin: 25px 0;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+#accueil h2{
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 24px;
+    font-weight: normal;
+}
+
+button{
+    background-color: #db620c;
+    color: white;
+    border: none;
+    padding: 35px 60px;
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+    margin-top: 25px;
+    transition: 0.3s;
+}
+
+button:hover{
+    background-color: #b94f05;
+    transform: scale(1.05);
+}
+
+/* MENU */
+#menu{
+    background: linear-gradient(to bottom, #c6bdbd, #f3f3f3);
+    text-align: center;
+    width: 100%;
+}
+
+#menu h2{
+    font-size: 40px;
+    color: #db620c;
+    margin-bottom: 40px;
+}
+
+.menu-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+    gap: 30px;
+}
+
+/* CARD */
+.card{
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: 0.4s;
+}
+
+
+.card:hover{
+    transform: translateY(-8px);
+}
+
+.card img{
+    width: 100%;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.card h3{
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.card p{
+    color: #db620c;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* AVIS */
+ #avis{
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.avis-form{
+    width: 350px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.avis-form input,
+.avis-form select,
+.avis-form textarea{
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.avis-form textarea{
+    height: 120px;
+    resize: none;
+}
+
+.avis-form button{
+    background-color: #E1306C;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.avis-box{
+    background-color: white;
+    width: 350px;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.avis-box h3{
+    color: #E1306C;
+}
+
+.commentaire{
+    margin-top: 10px;
+    font-style: italic;
+}
+
+/* GALERIE */
+#galerie{
+    background-color: #f2eeea;
+    text-align: center;
+    padding: 80px 40px;
+}
+
+#galerie h2{
+    color: #db620c;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+/* Container */
+.galerie-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
+    gap: 25px;
+}
+
+/* Images */
+.galerie-container img{
+    width: 100%;
+    height: 260px;
+
+    object-fit: cover;
+
+    border-radius: 25px;
+
+    border: 6px solid white;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+
+    transition: transform 0.5s ease,
+                box-shadow 0.5s ease;
+
+    cursor: pointer;
+}
+
+/* Hover */
+.galerie-container img:hover{
+    transform: scale(1.05);
+
+    box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+}
+
+/* CONTACT */
+#contact{
+    text-align: center;
+    background-color: rgb(182, 201, 196);
+}
+
+    #localisation{
+    text-align: center;
+    padding: 40px;
+}
+
+#localisation h2{
+    margin-bottom: 15px;
+}
+
+#localisation p{
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#localisation a{
+    text-decoration: none;
+    background-color: brown;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+#localisation a:hover{
+    background-color: darkred;
+}
+
+.phone-box{
+    display: inline-block;
+    background-color: brown;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+#contact h2{
+    color: #db620c;
+    font-size: 40px;
+    margin-bottom: 25px;
+}
+
+    .insta{
+    text-decoration: none;
+    color: white;
+    background-color: #E1306C;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    transition: 0.3s;
+}
+
+.insta img{
+    width: 25px;
+}
+
+.insta:hover{
+    background-color: #c82361;
+    transform: scale(1.05);
+}
+
+#contact p{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* FOOTER */
+footer{
+    background-color: #1f1f1f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+}
+
+/* RESPONSIVE */
+@media(max-width: 768px){
+
+    nav h1{
+        font-size: 40px;
+        display: none;
+    }
+
+    nav{
+        
+        
+    }
+
+    nav ul{
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+        display: none;
+    }
+
+    #accueil h1{
+        font-size: 38px;
+    }
+
+    #accueil h2{
+        font-size: 20px;
+    }
+
+    #menu h2,
+    #avis h2,
+    #galerie h2,
+    #contact h2{
+        font-size: 32px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logo {
+    animation: move 4s infinite;
+}
+
+
+@keyframes move {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(100px); }
+    100% { transform: translateX(0); }
+}

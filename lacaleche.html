@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Calèche Plus</title>
+
+    <link rel="stylesheet" href="lacaleche.css">
+</head>
+
+<body>
+ 
+    <!-- HEADER -->
+    <header>
+
+        <nav>
+            <h1>La Calèche Plus</h1>
+            <img src="Les image/Logo La Caleche.png" alt="logo la caleche" class="logo" width="800px">
+
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+
+                <li><a href="#menu">Menu</a></li>
+
+                <li><a href="#avis">Avis</a></li>
+                
+                <li><a href="#galerie">Galerie</a></li>
+                
+                
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- SECTION ACCUEIL -->
+    <section id="accueil">
+
+        <h1>Bienvenue à La Calèche</h1>
+        <style>h1 { color: #db620c; }</style>
+
+        <div>
+            <img src="Les image/petie dejeuner.jpeg" alt="petie dejeuner"  class="petie-dejeuner" width="800px">
+
+        </div>
+
+        <p>
+           <h2>La Calèche Plus existe depuis 1985 et vous accueille au cœur de Nouvelle Ville
+             à Constantine dans une ambiance chaleureuse et conviviale.</h2> 
+             <style>h2 { color: #494747; }</style>
+             <br>
+
+
+             <h2>Profitez de délicieux petits déjeuners, de plats savoureux,
+              d’un café de qualité et d’un service attentionné.</h2>
+
+            <style>p { color: #494747; }</style>
+            </p>
+            <a href="https://www.menu-lacaleche.icom.tn/" target="_blank" class="menu">
+                
+                <img src="Les image/Photo Menu11.jpeg" alt="menu" class="menu-img" >
+            <br>
+            <button>Voir le menu </button> 
+            </a>
+            
+
+    </section>
+
+    <!-- SECTION MENU -->
+    <section id="menu">
+
+        <h2>Notre Menu</h2>
+        <br>
+
+        <div class="menu-container">
+
+            <Div CLASS="card">
+
+                <h3>PochedEgg Burrata</h3>
+                <p>1200 DA</p>
+                <img src="Les image/POCHE DEGG BOURATA.jpeg" alt="PochedEgg Burrata" width="300px">
+            </Div>
+
+            <div class="card">
+
+                <h3>Cappuccino</h3>
+                <p>350 DA</p>
+                <img src="Les image/cafe.jpeg" alt="cafe" width="300px" >
+                
+            </div>
+
+            <div class="card">
+                
+                <h3>Fondant Chocolat</h3>
+                <p>350 DA</p>
+                <img src="Les image/Fondant chocolat.PNG" alt="Fondant chocolat" width="300px">
+                
+            </div>
+
+            <div class="card">
+
+                <h3>Les Omlettes </h3> 
+                   <p>500 DA</p>
+                <img src="Les image/Omlette au thon.PNG" alt="Les Omlette " width="300px">
+
+               
+            </div>
+
+            <div class="card">
+                <h3>Les Jus</h3>
+                <p>450 DA</p>
+                <img src="Les image/Les Jus.jpeg" alt="Les Jus"width="300px"> 
+
+
+            </div>
+            <div class="card">
+                <h3>Gauffre Au Creme Citron</h3>
+                <p>500 DA</p>
+                <img src="Les image/Gauffre au creme citron.PNG" alt="Gauffre au creme citron" width="300px">
+                
+            
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SECTION AVIS -->
+    
+    <!-- SECTION AVIS -->
+    <section id="avis">
+
+    <h2>Donnez votre avis</h2>
+
+    <form class="avis-form" id="avisForm">
+
+        <input type="text" id="nom" placeholder="Votre nom" required>
+
+        <label>Service :</label>
+        <select id="service">
+            <option>⭐⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐</option>
+            <option>⭐⭐</option>
+            <option>⭐</option>
+        </select>
+
+        <label>Endroit :</label>
+        <select id="endroit">
+            <option>⭐⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐</option>
+            <option>⭐⭐</option>
+            <option>⭐</option>
+        </select>
+
+        <label>Ambiance :</label>
+        <select id="ambiance">
+            <option>⭐⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐</option>
+            <option>⭐⭐</option>
+            <option>⭐</option>
+        </select>
+
+        <label>Qualité de la nourriture :</label>
+        <select id="qualite">
+            <option>⭐⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐</option>
+            <option>⭐⭐</option>
+            <option>⭐</option>
+        </select>
+
+        <label>Prix :</label>
+        <select id="prix">
+            <option>⭐⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐⭐</option>
+            <option>⭐⭐⭐</option>
+            <option>⭐⭐</option>
+            <option>⭐</option>
+        </select>
+
+        <textarea id="commentaire" placeholder="Votre commentaire"></textarea>
+
+        <button type="submit">Envoyer</button>
+
+    </form>
+
+    <!-- Les avis vont apparaître ici -->
+    <div id="listeAvis"></div>
+
+</section>
+
+<script>
+document.getElementById("avisForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let nom = document.getElementById("nom").value;
+    let service = document.getElementById("service").value;
+    let endroit = document.getElementById("endroit").value;
+    let ambiance = document.getElementById("ambiance").value;
+    let qualite = document.getElementById("qualite").value;
+    let prix = document.getElementById("prix").value;
+    let commentaire = document.getElementById("commentaire").value;
+
+    let avis = `
+        <div class="avis-box">
+            <h3>${nom}</h3>
+
+            <p><strong>Service :</strong> ${service}</p>
+            <p><strong>Endroit :</strong> ${endroit}</p>
+            <p><strong>Ambiance :</strong> ${ambiance}</p>
+            <p><strong>Qualité :</strong> ${qualite}</p>
+            <p><strong>Prix :</strong> ${prix}</p>
+
+            <p class="commentaire">${commentaire}</p>
+        </div>
+    `;
+
+    document.getElementById("listeAvis").innerHTML += avis;
+
+    document.getElementById("avisForm").reset();
+
+});
+</script>
+
+    <!-- SECTION GALERIE -->
+    <section id="galerie">
+
+        <h2>Galerie</h2>
+
+        <div class="galerie-container">
+
+            <img src="Les image/Salle-1.jpeg">
+            <img src="Les image/abdou-matcha.jpeg">
+            <img src="Les image/Salle-2.jpeg">
+            
+            <img src="Les image/Salle-3.jpeg">
+            <img src="Les image/Exterieur.jpeg">
+            <img src="Les image/Salle-4.jpeg">
+
+        </div>
+
+    </section>
+
+    <!-- SECTION CONTACT -->
+    <section id="contact">
+
+        <h2>Contact</h2>
+        <section id="localisation">
+
+        <h2> 📍Notre Localisation</h2>
+
+        <p>
+        La Calèche Plus — Ain El Bey, Constantine, Algérie
+         </p>
+         <br>
+
+         <a href="https://maps.app.goo.gl/5QZzdpqoAD69KWaW8?g_st=ic" target="_blank">
+         Voir la localisation exacte
+          </a>
+
+        </section>
+
+        <div class="phone-box">
+         📞 06 74 68 69 89
+        </div>
+
+         
+        <br>
+
+        <p>🕒 Ouvert     SAMEDI__JEUDI  De 08h à 23h
+            <br>
+                       VENDREDI De 16h à 23h
+        </p>
+        <a href="https://www.instagram.com/lacalecheplus?igsh=MWRmbGdqemUwMWE5Nw==" 
+         target="_blank" 
+        class="insta">
+    
+        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" 
+         alt="Instagram">
+         
+         Instagram
+</a>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 La Calèche - Tous droits réservés
+        </p>
+
+    </footer>
+
+</body>
+</html>
