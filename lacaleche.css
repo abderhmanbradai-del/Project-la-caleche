@@ -24,6 +24,10 @@ header{
     z-index: 1000;
 }
 
+.hamburger{
+    display: none;
+}
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -237,16 +241,17 @@ button:hover{
 }
 
 /* Container */
+
 .galerie-container{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px,1fr));
-    gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
 }
 
 /* Images */
 .galerie-container img{
     width: 100%;
-    height: 260px;
+    height: 350px;
 
     object-fit: cover;
 
@@ -365,16 +370,24 @@ footer{
         display: none;
     }
 
-    nav{
-        
-        
+    .hamburger{
+        display: block;
+        background: none;
+        border: none;
+        font-size: 35px;
+        color: white;
+        cursor: pointer;
     }
 
     nav ul{
+        display: none;
         flex-direction: column;
         text-align: center;
         gap: 15px;
-        display: none;
+    }
+
+    nav ul.active{
+        display: flex;
     }
 
     #accueil h1{
@@ -390,6 +403,10 @@ footer{
     #galerie h2,
     #contact h2{
         font-size: 32px;
+    }
+
+    .galerie-container{
+        grid-template-columns: 1fr;
     }
 }
 

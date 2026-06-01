@@ -17,7 +17,11 @@
             <h1>La Calèche Plus</h1>
             <img src="Les image/Logo La Caleche.png" alt="logo la caleche" class="logo" width="800px">
 
-            <ul>
+            <button class="hamburger" onclick="toggleMenu()">
+            ☰
+            </button>
+                    <ul id="menu-mobile">
+
                 <li><a href="#accueil">Accueil</a></li>
 
                 <li><a href="#menu">Menu</a></li>
@@ -321,6 +325,12 @@ document.getElementById("avisForm").addEventListener("submit", function(e){
         </p>
 
     </footer>
+           <script>
+            function toggleMenu() {
+                 document.getElementById("menu-mobile")
+            .classList.toggle("active");
+            }
+            </script>
 
 </body>
 </html>
