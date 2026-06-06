@@ -370,25 +370,57 @@ footer{
         display: none;
     }
 
-    .hamburger{
-        display: block;
-        background: none;
-        border: none;
-        font-size: 35px;
-        color: white;
-        cursor: pointer;
-    }
+   .hamburger{
+    display: block;
+    background: transparent;
+    border: none;
+    padding: 0 !important;
+    margin: 0;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+}
 
-    nav ul{
+    nav{
+    position: relative;
+}
+
+#menu-mobile{
+    display: none;
+}
+
+@media(max-width:768px){
+
+    #menu-mobile{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #a49595;
+
         display: none;
         flex-direction: column;
-        text-align: center;
-        gap: 15px;
+        align-items: center;
+
+        padding: 20px 0;
+        z-index: 9999;
     }
 
-    nav ul.active{
+    #menu-mobile.active{
         display: flex;
     }
+
+    #menu-mobile li{
+        list-style: none;
+        margin: 12px 0;
+    }
+
+    #menu-mobile li a{
+        color: white;
+        font-size: 22px;
+        text-decoration: none;
+    }
+}
 
     #accueil h1{
         font-size: 38px;
@@ -432,4 +464,12 @@ footer{
     0% { transform: translateX(0); }
     50% { transform: translateX(100px); }
     100% { transform: translateX(0); }
+}
+
+.hamburger{
+    background: transparent !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    border: none !important;
+    font-size: 35px;
 }
