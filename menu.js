@@ -33,6 +33,7 @@ const MENU=[
 ["Gaufres",sweet("Gaufre")],
 ["Pancakes",sweet("Pancake")],
 ["Fondants",[["Fondant chocolat",450],["Fondant chocolat crème anglaise",600],["Fondant pistache",850],["Fondant pistache crème anglaise",1000]]],
+["Suppléments sucrés",[["Supplément boule de glace",300],["Supplément nutella",350]]],
 ["Glaces",[["Affogato glace",550],["Coupe simple",600],["Chocolat liégeois",700],["Banana split",750]]],
 ["Pain perdu",[["Pain perdu amandine",500],["Pain perdu caramello",600],["Pain perdu pistachio",700]]]
 ];
