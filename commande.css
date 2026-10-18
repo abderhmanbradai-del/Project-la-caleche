@@ -1,0 +1,13 @@
+[hidden]{display:none!important}
+#commander{max-width:720px;margin:0 auto;padding:20px 14px}
+#commander details{border:1px solid #e5d5c5;border-radius:10px;margin:8px 0;background:#fff8f0}
+#commander summary{padding:12px 14px;font-weight:700;cursor:pointer;color:#c0502a}
+.plat{display:flex;justify-content:space-between;align-items:center;padding:8px 14px;border-top:1px solid #f0e4d6}
+.plat small{display:block;color:#777}
+.qty{display:flex;align-items:center;gap:10px}
+.qty button{width:32px;height:32px;border:0;border-radius:50%;background:#f4673e;color:#fff;font-size:18px}
+#form-commande{display:grid;gap:10px;margin-top:20px;padding:14px;border:2px solid #f4673e;border-radius:12px}
+#form-commande input,#form-commande select,#form-commande textarea{padding:10px;border:1px solid #ccc;border-radius:8px;font-size:16px}
+#form-commande>button{padding:14px;border:0;border-radius:10px;background:#f4673e;color:#fff;font-size:17px;font-weight:700}
+
+.ferme{background:#fde8e0;color:#a33;padding:12px;border-radius:10px;text-align:center;font-weight:700}

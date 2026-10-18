@@ -6,6 +6,7 @@
     <title>La Calèche Plus</title>
 
     <link rel="stylesheet" href="lacaleche.css">
+     <link rel="stylesheet" href="commande.css">
 </head>
 
 <body>
@@ -25,6 +26,8 @@
                 <li><a href="#accueil">Accueil</a></li>
 
                 <li><a href="#menu">Menu</a></li>
+
+                <li><a href="#commander">Commander</a></li>
 
                 <li><a href="#avis">Avis</a></li>
                 
@@ -155,6 +158,28 @@
 
 
     </section>
+
+    <!-- SECTION COMMANDER EN LIGNE -->
+    <section id="commander">
+        <h2>Commander en ligne</h2>
+        <div id="commander-menu"></div>
+        <form id="form-commande" onsubmit="commander(event)">
+            <h3>Votre commande</h3>
+            <ul id="recap"></ul>
+            <p>Total : <b id="total">0 DA</b></p>
+            <input name="nom" placeholder="Votre nom" required>
+            <input name="tel" type="tel" placeholder="Téléphone" required>
+            <select name="mode" onchange="this.form.adresse.hidden=this.value!=='Livraison'">
+                <option>Sur place</option>
+                <option>À emporter</option>
+                <option>Livraison</option>
+            </select>
+            <input name="adresse" placeholder="Adresse de livraison" hidden>
+            <textarea name="note" placeholder="Remarque (facultatif)"></textarea>
+            <button>Envoyer la commande</button>
+        </form>
+    </section>
+
 
     <!-- SECTION AVIS -->
     
@@ -304,7 +329,7 @@ document.getElementById("avisForm").addEventListener("submit", function(e){
 
         <p>🕒 Ouvert     SAMEDI__JEUDI  De 08h à 23h
             <br>
-                       VENDREDI De 16h à 23h
+                       VENDREDI De 15h à 23h
         </p>
         <a href="https://www.instagram.com/lacalecheplus?igsh=MWRmbGdqemUwMWE5Nw==" 
          target="_blank" 
@@ -331,6 +356,8 @@ document.getElementById("avisForm").addEventListener("submit", function(e){
             .classList.toggle("active");
             }
             </script>
+            <script src="menu.js"></script>
+            <script src="commande.js"></script>
 
 </body>
 </html>
