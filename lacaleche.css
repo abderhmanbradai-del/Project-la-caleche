@@ -1,5 +1,4 @@
 
-Lacaleche · CSS
 /* ===== La Calèche Plus – style Lotus ===== */
 :root{--ac:#e0702f;--ac2:#b94f05;--bg:#141110;--bar:#1c1816;--tx:#f5efe8;--mu:#b9ada0}
  
@@ -17,7 +16,7 @@ nav h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:
 nav ul{display:flex;list-style:none;gap:25px}
 nav ul li a{text-decoration:none;color:var(--tx);font-size:13px;letter-spacing:.14em;text-transform:uppercase;transition:.3s}
 nav ul li a:hover{color:var(--ac)}
-.hamburger{display:none;background:transparent!important;border:none!important;padding:0!important;margin:0!important;font-size:35px;color:var(--tx);cursor:pointer}
+.hamburger{display:none;width:46px;height:46px;margin:0!important;padding:0!important;background:var(--ac)!important;color:#1a0f08!important;border:none!important;border-radius:8px;font-size:28px;line-height:46px;text-align:center;cursor:pointer;align-items:center;justify-content:center}
  
 /* BANDEAU */
 .bandeau{background:var(--ac);color:#1a0f08;text-align:center;font-size:13px;letter-spacing:.08em;padding:12px 16px}
@@ -32,8 +31,10 @@ nav ul li a:hover{color:var(--ac)}
 #accueil.hero h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:clamp(48px,14vw,90px);line-height:.95;color:var(--tx)}
 #accueil.hero h1 i{display:block;color:var(--ac)}
 #accueil.hero h2{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;font-weight:normal;font-size:22px;color:#e6d9cc;margin:18px 0 30px}
-.btn{display:block;width:min(290px,100%);padding:15px;margin:10px auto;text-decoration:none;color:var(--tx);border:1px solid #f3b48a;letter-spacing:.22em;font-size:12px;text-transform:uppercase}
-.btn.p{background:var(--ac);border-color:var(--ac);color:#1a0f08;font-weight:600}
+.btn{display:block;width:min(300px,100%);padding:17px 12px;margin:12px auto;text-decoration:none;color:#fff;background:rgba(0,0,0,.6);border:2px solid #fff;border-radius:6px;letter-spacing:.08em;font-size:17px;font-weight:700;text-transform:uppercase;text-align:center}
+.btn:hover{background:#fff;color:#141110}
+.btn.p{background:var(--ac);border-color:var(--ac);color:#1a0f08}
+.btn.p:hover{background:#fff;border-color:#fff;color:#141110}
  
 /* BOUTONS */
 button{background:var(--ac);color:#1a0f08;border:none;padding:14px 28px;border-radius:0;font-size:16px;font-weight:600;cursor:pointer;margin-top:20px;transition:.3s}
@@ -88,11 +89,12 @@ footer{background:#0d0b0a;color:var(--mu);text-align:center;padding:20px;font-si
 /* MOBILE */
 @media(max-width:768px){
     nav h1{display:none}
-    .hamburger{display:block}
-    #menu-mobile{display:none;position:absolute;top:100%;left:0;width:100%;background:var(--bar);flex-direction:column;align-items:center;padding:20px 0;z-index:9999}
+    .hamburger{display:flex}
+    header{padding:10px 16px}
+    #menu-mobile{display:none;position:absolute;top:100%;left:0;width:100%;background:var(--bar);flex-direction:column;align-items:center;padding:0;z-index:9999;border-bottom:3px solid var(--ac)}
     #menu-mobile.active{display:flex}
-    #menu-mobile li{list-style:none;margin:12px 0}
-    #menu-mobile li a{font-size:18px}
+    #menu-mobile li{list-style:none;width:100%;text-align:center;border-top:1px solid #3a302a}
+    #menu-mobile li a{display:block;padding:16px;font-size:18px;font-weight:600}
     section{padding:60px 6%}
     #menu h2,#avis h2,#galerie h2,#contact h2,#commander h2{font-size:34px}
     .galerie-container{grid-template-columns:1fr}

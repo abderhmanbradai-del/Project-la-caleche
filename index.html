@@ -1,25 +1,24 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La Calèche Plus</title>
- 
+
     <link rel="stylesheet" href="lacaleche.css">
     <link rel="stylesheet" href="commande.css">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,500&family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
- 
+
 </head>
- 
+
 <body>
- 
+
     <!-- HEADER -->
     <header>
         <nav>
             <h1>La Calèche Plus</h1>
             <img src="Les image/Logo La Caleche.png" alt="logo la caleche" class="logo">
- 
+
             <button class="hamburger" onclick="toggleMenu()">☰</button>
             <ul id="menu-mobile">
                 <li><a href="#accueil">Accueil</a></li>
@@ -31,82 +30,81 @@
             </ul>
         </nav>
     </header>
- 
+
     <div class="bandeau">Commandes en ligne : tous les jours 08:00–23:00 · vendredi 15:00–23:00</div>
 
- 
     <!-- SECTION ACCUEIL -->
     <section id="accueil" class="hero">
         <div class="slide on" style="background-image:url('Les image/Salle-1.jpeg')"></div>
         <div class="slide" style="background-image:url('Les image/Salle-2.jpeg')"></div>
         <div class="slide" style="background-image:url('Les image/Salle-3.jpeg')"></div>
- 
+
         <div class="tag">Café · Petit déjeuner · Constantine</div>
         <h1>La Calèche <i>Plus</i></h1>
         <h2>Depuis 1985, au cœur de Nouvelle Ville</h2>
- 
+
         <a class="btn p" href="https://www.menu-lacaleche.icom.tn/" target="_blank">Voir le menu</a>
         <a class="btn" href="#commander">Commander en ligne</a>
         <a class="btn" href="#contact">Nous trouver</a>
     </section>
- 
+
     <!-- SECTION MENU -->
     <section id="menu">
         <h2>Notre Menu</h2>
         <br>
         <div class="menu-container">
- 
+
             <div class="card">
                 <img src="Les image/POCHE DEGG BOURATA.jpeg" alt="PochedEgg Burrata">
                 <h3>PochedEgg Burrata</h3>
                 <p>1200 DA</p>
             </div>
- 
+
             <div class="card">
                 <img src="Les image/cafe.jpeg" alt="cafe">
                 <h3>Café Créme</h3>
                 <p>350 DA</p>
             </div>
- 
+
             <div class="card">
                 <img src="Les image/Fondant chocolat.PNG" alt="Fondant chocolat">
                 <h3>Fondant Chocolat</h3>
                 <p>450 DA</p>
             </div>
- 
+
             <div class="card">
                 <img src="Les image/Omlette au thon.PNG" alt="Les Omlettes">
                 <h3>Les Omlettes</h3>
                 <p>500 DA</p>
             </div>
- 
+
             <div class="card">
                 <img src="Les image/Les Jus.jpeg" alt="Les Jus">
                 <h3>Les Jus</h3>
                 <p>450 DA</p>
             </div>
- 
+
             <div class="card">
                 <img src="Les image/Gauffre au creme citron.PNG" alt="Gauffre au creme citron">
                 <h3>Gauffre Au Creme Citron</h3>
                 <p>400 DA</p>
             </div>
- 
+
             <div class="card">
                 <img src="Les image/Pain-Perdu-Pistache.jpeg" alt="Pain Perdu Pistache">
                 <h3>Pain Perdu Pistache</h3>
                 <p>700 DA</p>
             </div>
- 
+
             <div class="card">
                 <img src="Les image/Petite-Dejuner-Complet.jpeg" alt="Petit Déjeuner Complet">
                 <h3>Petit Déjeuner Complet</h3>
                 <p>1400 DA</p>
             </div>
- 
+
         </div>
     </section>
- 
+
     <!-- SECTION COMMANDER EN LIGNE -->
     <section id="commander">
         <h2>Commander en ligne</h2>
@@ -127,36 +125,36 @@
             <button>Envoyer la commande</button>
         </form>
     </section>
- 
+
     <!-- SECTION AVIS -->
     <section id="avis">
         <h2>Donnez votre avis</h2>
- 
+
         <form class="avis-form" id="avisForm">
             <input type="text" id="nom" placeholder="Votre nom" required>
- 
+
             <label>Service :</label>
             <select id="service"><option>⭐⭐⭐⭐⭐</option><option>⭐⭐⭐⭐</option><option>⭐⭐⭐</option><option>⭐⭐</option><option>⭐</option></select>
- 
+
             <label>Endroit :</label>
             <select id="endroit"><option>⭐⭐⭐⭐⭐</option><option>⭐⭐⭐⭐</option><option>⭐⭐⭐</option><option>⭐⭐</option><option>⭐</option></select>
- 
+
             <label>Ambiance :</label>
             <select id="ambiance"><option>⭐⭐⭐⭐⭐</option><option>⭐⭐⭐⭐</option><option>⭐⭐⭐</option><option>⭐⭐</option><option>⭐</option></select>
- 
+
             <label>Qualité de la nourriture :</label>
             <select id="qualite"><option>⭐⭐⭐⭐⭐</option><option>⭐⭐⭐⭐</option><option>⭐⭐⭐</option><option>⭐⭐</option><option>⭐</option></select>
- 
+
             <label>Prix :</label>
             <select id="prix"><option>⭐⭐⭐⭐⭐</option><option>⭐⭐⭐⭐</option><option>⭐⭐⭐</option><option>⭐⭐</option><option>⭐</option></select>
- 
+
             <textarea id="commentaire" placeholder="Votre commentaire"></textarea>
             <button type="submit">Envoyer</button>
         </form>
- 
+
         <div id="listeAvis"></div>
     </section>
- 
+
     <script>
     document.getElementById("avisForm").addEventListener("submit", function(e){
         e.preventDefault();
@@ -167,7 +165,7 @@
         let qualite = document.getElementById("qualite").value;
         let prix = document.getElementById("prix").value;
         let commentaire = document.getElementById("commentaire").value;
- 
+
         let avis = `
             <div class="avis-box">
                 <h3>${nom}</h3>
@@ -183,7 +181,7 @@
         document.getElementById("avisForm").reset();
     });
     </script>
- 
+
     <!-- SECTION GALERIE -->
     <section id="galerie">
         <h2>Galerie</h2>
@@ -196,47 +194,56 @@
             <img src="Les image/Salle-4.jpeg" alt="Salle 4">
         </div>
     </section>
- 
+
     <!-- SECTION CONTACT -->
     <section id="contact">
         <h2>Contact</h2>
- 
+
         <section id="localisation">
             <h2>📍 Notre Localisation</h2>
             <p>La Calèche Plus — Ain El Bey, Constantine, Algérie</p>
             <a href="https://maps.app.goo.gl/5QZzdpqoAD69KWaW8?g_st=ic" target="_blank">Voir la localisation exacte</a>
         </section>
- 
+
         <div class="phone-box">📞 06 74 68 69 89</div>
         <br><br>
- 
+
         <p>🕒 Ouvert SAMEDI – JEUDI de 08h à 23h
             <br>VENDREDI de 15h à 23h
         </p>
- 
+
         <a href="https://www.instagram.com/lacalecheplus?igsh=MWRmbGdqemUwMWE5Nw==" target="_blank" class="insta">
             <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
             Instagram
         </a>
     </section>
- 
+
     <!-- FOOTER -->
     <footer>
         <p>© 2026 La Calèche - Tous droits réservés.</p>
     </footer>
- 
+
     <script>
         function toggleMenu() {
             document.getElementById("menu-mobile").classList.toggle("active");
         }
+        // Ferme le menu quand on clique sur un lien (Commander, Menu, etc.)
+        document.querySelectorAll("#menu-mobile a").forEach(function(a){
+            a.addEventListener("click", function(){
+                document.getElementById("menu-mobile").classList.remove("active");
+            });
+        });
+        // Ferme le menu quand on clique ailleurs sur la page
+        document.addEventListener("click", function(e){
+            if(!e.target.closest("nav")){
+                document.getElementById("menu-mobile").classList.remove("active");
+            }
+        });
         var s=document.querySelectorAll('.slide'),i=0;
         setInterval(function(){s[i].classList.remove('on');i=(i+1)%s.length;s[i].classList.add('on')},5000);
     </script>
     <script src="menu.js"></script>
     <script src="commande.js"></script>
- 
+
 </body>
 </html>
- 
-
-
