@@ -1,26 +1,25 @@
-
 /* ===== La Calèche Plus – style Lotus ===== */
 :root{--ac:#e0702f;--ac2:#b94f05;--bg:#141110;--bar:#1c1816;--tx:#f5efe8;--mu:#b9ada0}
- 
+
 *{margin:0;padding:0;box-sizing:border-box}
- 
+
 body{font-family:"DM Sans",Arial,Helvetica,sans-serif;background:var(--bg);color:var(--tx);line-height:1.6}
- 
+
 section{padding:80px 10%}
- 
+
 /* HEADER */
 header{background:var(--bar);border-bottom:1px solid #3a302a;padding:10px 24px;position:sticky;top:0;z-index:1000}
 nav{display:flex;justify-content:space-between;align-items:center;position:relative}
 nav h1{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:34px;color:var(--tx)}
-.logo{width:90px;height:auto}
+.logo{width:150px;height:auto;filter:brightness(0) invert(1)}  /* logo foncé -> blanc, visible sur fond sombre */
 nav ul{display:flex;list-style:none;gap:25px}
 nav ul li a{text-decoration:none;color:var(--tx);font-size:13px;letter-spacing:.14em;text-transform:uppercase;transition:.3s}
 nav ul li a:hover{color:var(--ac)}
 .hamburger{display:none;width:46px;height:46px;margin:0!important;padding:0!important;background:var(--ac)!important;color:#1a0f08!important;border:none!important;border-radius:8px;font-size:28px;line-height:46px;text-align:center;cursor:pointer;align-items:center;justify-content:center}
- 
+
 /* BANDEAU */
 .bandeau{background:var(--ac);color:#1a0f08;text-align:center;font-size:13px;letter-spacing:.08em;padding:12px 16px}
- 
+
 /* HERO */
 #accueil.hero{position:relative;min-height:85vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:60px 20px;overflow:hidden;background:#000}
 .slide{position:absolute;inset:0;background-size:cover;background-position:center;opacity:0;transition:opacity 1.6s}
@@ -35,14 +34,14 @@ nav ul li a:hover{color:var(--ac)}
 .btn:hover{background:#fff;color:#141110}
 .btn.p{background:var(--ac);border-color:var(--ac);color:#1a0f08}
 .btn.p:hover{background:#fff;border-color:#fff;color:#141110}
- 
+
 /* BOUTONS */
 button{background:var(--ac);color:#1a0f08;border:none;padding:14px 28px;border-radius:0;font-size:16px;font-weight:600;cursor:pointer;margin-top:20px;transition:.3s}
 button:hover{background:var(--ac2);color:#fff}
- 
+
 /* TITRES DE SECTION */
 #menu h2,#avis h2,#galerie h2,#contact h2,#commander h2{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;font-size:42px;color:var(--ac);margin-bottom:40px;text-align:center}
- 
+
 /* MENU */
 #menu{background:var(--bg);text-align:center}
 .menu-container{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:30px}
@@ -51,10 +50,10 @@ button:hover{background:var(--ac2);color:#fff}
 .card img{width:100%;max-width:300px;height:170px;object-fit:cover;border-radius:6px}
 .card h3{color:#333;margin:10px 0;font-size:22px}
 .card p{color:var(--ac);font-size:20px;font-weight:bold}
- 
+
 /* COMMANDER */
 #commander{background:var(--bg)}
- 
+
 /* AVIS */
 #avis{padding:60px 20px;text-align:center;background:var(--bg)}
 .avis-form{width:350px;max-width:100%;margin:auto;display:flex;flex-direction:column;gap:15px;text-align:left}
@@ -63,13 +62,13 @@ button:hover{background:var(--ac2);color:#fff}
 .avis-box{background:#241e1b;width:350px;max-width:100%;margin:30px auto;padding:20px;border-radius:6px;text-align:left}
 .avis-box h3{color:var(--ac)}
 .commentaire{margin-top:10px;font-style:italic;color:var(--mu)}
- 
+
 /* GALERIE */
 #galerie{background:var(--bar);text-align:center;padding:80px 40px}
 .galerie-container{display:grid;grid-template-columns:repeat(3,1fr);gap:30px}
 .galerie-container img{width:100%;height:320px;object-fit:cover;border-radius:6px;box-shadow:0 8px 20px rgba(0,0,0,.4);transition:transform .5s,box-shadow .5s;cursor:pointer}
 .galerie-container img:hover{transform:scale(1.04)}
- 
+
 /* CONTACT */
 #contact{text-align:center;background:var(--bar);color:var(--tx)}
 #contact p{font-size:20px;margin-bottom:10px}
@@ -82,10 +81,10 @@ button:hover{background:var(--ac2);color:#fff}
 .insta{text-decoration:none;color:#fff;background:#E1306C;padding:10px 20px;border-radius:6px;font-size:18px;font-weight:bold;display:inline-flex;align-items:center;gap:10px;margin-top:15px;transition:.3s}
 .insta img{width:25px}
 .insta:hover{background:#c82361;transform:scale(1.05)}
- 
+
 /* FOOTER */
 footer{background:#0d0b0a;color:var(--mu);text-align:center;padding:20px;font-size:16px}
- 
+
 /* MOBILE */
 @media(max-width:768px){
     nav h1{display:none}
@@ -99,6 +98,39 @@ footer{background:#0d0b0a;color:var(--mu);text-align:center;padding:20px;font-si
     #menu h2,#avis h2,#galerie h2,#contact h2,#commander h2{font-size:34px}
     .galerie-container{grid-template-columns:1fr}
 }
- 
 
+/* ===== COMMANDER : liste des produits lisible ===== */
+#commander-menu{color:#2b2623}                 /* noms et quantités en foncé (avant : blanc sur crème) */
+#commander-menu button{
+    width:44px;height:44px;min-width:44px;
+    padding:0!important;margin:0!important;
+    border-radius:50%;
+    background:var(--ac);color:#fff;
+    font-size:26px;font-weight:700;line-height:1;
+    display:inline-flex;align-items:center;justify-content:center;
+}
+#commander-menu button:hover{background:var(--ac2);transform:none}
+#commander-menu span,#commander-menu b,#commander-menu strong{color:#2b2623}
+#commander-menu button span{color:#fff}
 
+/* ===== COMMANDER : lisible sur les cartes claires ===== */
+#commander details{background:#fff8f0}
+#commander summary{color:#b3421f;font-size:18px}
+.plat{color:#222}
+.plat>span:first-child{color:#222;font-weight:700;font-size:17px}
+.plat small{color:#555;font-weight:400;font-size:14px}
+.qty{gap:12px}
+.qty span,.qty b,.qty strong,.qty output{min-width:30px;text-align:center;color:#111;font-size:20px;font-weight:800}
+.qty button{width:40px;height:40px;padding:0;margin:0;display:flex;align-items:center;justify-content:center;border-radius:50%;background:#e0702f;color:#fff;font-size:24px;font-weight:800;line-height:1}
+.qty button:hover{transform:none;background:#b94f05}
+.qty button:disabled{background:#c9b8aa;color:#fff;cursor:not-allowed;opacity:1}
+.qty button:disabled:hover{background:#c9b8aa}
+.ferme{font-size:16px;margin-bottom:14px}
+#form-commande button:disabled{background:#c9b8aa;color:#fff;cursor:not-allowed}
+#form-commande input:disabled,#form-commande select:disabled,#form-commande textarea:disabled{background:#eee;color:#666}
+
+/* Formulaire de commande */
+#form-commande{background:#fff8f0;color:#222}
+#form-commande h3,#form-commande p,#recap,#recap li{color:#222}
+#form-commande input,#form-commande select,#form-commande textarea{background:#fff;color:#111}
+#form-commande>button{margin-top:0}
